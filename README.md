@@ -201,6 +201,6 @@ The project includes several business measures, including:
 
 # 📬 Contact
 
-**GitHub:** https://github.com/yourusername
+**GitHub:** (https://github.com/souravjha12345678-cpu)
 
-**LinkedIn:** https://linkedin.com/in/yourprofile
+**LinkedIn:** (https://www.linkedin.com/in/sourav-jha-866140313/)
