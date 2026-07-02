@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project presents an interactive **E-Commerce Sales Dashboard** developed in **Power BI** to analyze business performance across sales, customers, and products. The dashboard enables stakeholders to monitor key performance indicators (KPIs), identify trends, and make data-driven decisions through interactive visualizations.
+This project presents an interactive **E-Commerce Sales Dashboard** built using **Power BI**. The dashboard provides insights into sales performance, customer behavior, and product performance, enabling stakeholders to monitor KPIs and make informed business decisions.
 
 ---
 
@@ -10,12 +10,12 @@ This project presents an interactive **E-Commerce Sales Dashboard** developed in
 
 The dashboard was developed to answer the following business questions:
 
-- What is the overall sales and profit performance?
+- How is the business performing overall?
 - Which customer segment contributes the most revenue?
-- Which product categories and products perform best?
-- Which regions generate the highest sales?
-- What are the top and bottom performing products?
-- How does customer purchasing behavior vary across segments?
+- Which product categories generate the highest sales?
+- Which products are the top and bottom performers?
+- How does sales performance vary across regions?
+- What are the purchasing patterns of customers?
 
 ---
 
@@ -25,37 +25,36 @@ The dashboard was developed to answer the following business questions:
 |-----------|---------|
 | Dataset | E-Commerce Sales Dataset |
 | Records | 113,000+ |
-| Columns | 21 |
-| Time Period | April 2021 – April 2023 |
-| Tool Used | Power BI |
-| Data Preparation | Power Query |
-| Calculations | DAX |
+| Analysis Period | 4 January 2021 – 31 December 2022 |
+| Duration | 727 Days |
+| Tool | Microsoft Power BI |
+| Languages | DAX, Power Query (M) |
 
 ---
 
 # 🛠 Data Preparation
 
-The following preprocessing steps were performed before analysis:
+The following preprocessing steps were completed before building the dashboard.
 
-- Converted columns to appropriate data types
+- Imported the dataset into Power BI
+- Verified data types
 - Removed duplicate records
-- Checked for missing values
 - Created calculated columns
 - Built DAX measures
 - Created business KPIs
-- Validated delivery-related data
+- Validated data quality
 
-### Data Quality Note
+### Data Quality Validation
 
-During validation, approximately **17.7%** of delivery-related records contained inconsistent delivery dates. These records were excluded from delivery performance analysis to maintain reporting accuracy.
+During data validation, approximately **17.7%** of delivery-related records contained inconsistent delivery dates. To maintain reporting accuracy, delivery analysis was excluded from the final dashboard.
 
 ---
 
-# 📈 Dashboard Pages
+# 📊 Dashboard Pages
 
-## 1️⃣ Executive Overview
+## Executive Overview
 
-Provides a high-level summary of business performance.
+The Executive Overview provides a high-level summary of business performance.
 
 ### KPIs
 
@@ -73,17 +72,15 @@ Provides a high-level summary of business performance.
 - Revenue by Product Category
 - Profit vs Loss Distribution
 
----
-
 ### Dashboard Preview
 
-![Executive Overview](Images/Overview.png)
+![Executive Overview](Overview.png)
 
 ---
 
-## 2️⃣ Customer Analysis
+## Customer Analysis
 
-Analyzes customer purchasing behavior and segmentation.
+This page focuses on customer purchasing behavior and customer segmentation.
 
 ### KPIs
 
@@ -91,27 +88,25 @@ Analyzes customer purchasing behavior and segmentation.
 - Total Profit
 - Total Orders
 - Total Customers
-- Average Order Value (AOV)
+- Average Order Value
 
 ### Visuals
 
-- Customers by Product Category
+- Customer Distribution by Segment
 - Revenue by Customer Segment
 - Orders by Shipping Type
+- Customer Purchases by Product Category
 - Orders by Region
-- Customer Distribution
-
----
 
 ### Dashboard Preview
 
-![Customer Analysis](Images/Customer_Analysis.png)
+![Customer Analysis](Customer%20analysis.png)
 
 ---
 
-## 3️⃣ Product Analysis
+## Product Analysis
 
-Evaluates product performance and profitability.
+This page evaluates product sales performance and profitability.
 
 ### KPIs
 
@@ -129,71 +124,53 @@ Evaluates product performance and profitability.
 - Bottom 5 Products by Profit
 - Profit by Product Category
 
----
-
 ### Dashboard Preview
 
-![Product Analysis](Images/Product_Analysis.png)
+![Product Analysis](product%20analysis.png)
 
 ---
 
-# 📊 Key Performance Indicators (KPIs)
-
-The dashboard includes the following business metrics:
+# 📈 Key Performance Indicators
 
 - Total Revenue
 - Total Profit
-- Profit Margin
 - Total Orders
 - Total Customers
+- Profit Margin
 - Average Order Value (AOV)
 
 ---
 
-# 📌 Key Business Insights
+# 💡 Key Business Insights
 
 - Office Supplies generated the highest revenue among all product categories.
-- Consumer customers contributed the largest share of total revenue.
-- Standard Class was the most frequently selected shipping method.
-- Regional sales varied significantly across customer locations.
-- A small number of products generated a substantial portion of total revenue.
-- Product profitability differed across categories, highlighting opportunities for optimization.
+- Consumer customers contributed the highest share of total revenue.
+- Standard Class was the most preferred shipping method.
+- Revenue varied across customer regions.
+- A small number of products contributed a significant share of total revenue.
+- Product profitability differed considerably across categories.
 
 ---
 
-# 📚 DAX Measures
+# 🧮 DAX Measures
 
-Some of the DAX measures used include:
+The project includes several business measures, including:
 
-```DAX
-Total Revenue
-Total Profit
-Profit Margin
-Total Orders
-Total Customers
-Average Order Value
-Revenue per Customer
-```
+- Total Revenue
+- Total Profit
+- Total Orders
+- Total Customers
+- Profit Margin
+- Average Order Value
+- Revenue per Customer
 
 ---
 
-# 🧹 Power Query Transformations
-
-- Changed Data Types
-- Renamed Columns
-- Added Custom Columns
-- Data Validation
-- Removed Duplicates
-- Created Business Logic Columns
-
----
-
-# 📌 Skills Demonstrated
+# 💻 Skills Demonstrated
 
 - Power BI Dashboard Development
 - Data Cleaning
-- Data Transformation
-- Power Query (M Language)
+- Power Query
 - DAX
 - Data Modeling
 - KPI Design
@@ -205,39 +182,15 @@ Revenue per Customer
 
 # 🚀 Future Improvements
 
-- Add Customer Retention Analysis
-- Add Customer Lifetime Value (CLV)
-- Improve Delivery Analysis after resolving data quality issues
-- Add Year-over-Year Growth Analysis
-- Include Forecasting using Power BI Analytics
+- Customer Retention Analysis
+- Customer Lifetime Value (CLV)
+- Delivery Performance Analysis after resolving data quality issues
+- Year-over-Year Sales Growth
+- Sales Forecasting
 
 ---
 
-# 📁 Repository Structure
-
-```
-Ecommerce-Sales-Dashboard
-│
-├── Dashboard.pbix
-├── Ecommerce_Dashboard.pdf
-├── README.md
-│
-├── Dataset
-│   └── ecommerce_dataset.csv
-│
-├── Images
-│   ├── Overview.png
-│   ├── Customer_Analysis.png
-│   └── Product_Analysis.png
-│
-└── Documentation
-    ├── Data_Cleaning.pdf
-    └── DAX_Measures.pdf
-```
-
----
-
-# 💻 Tools & Technologies
+# 🛠 Tools & Technologies
 
 - Microsoft Power BI
 - Power Query (M)
@@ -248,10 +201,6 @@ Ecommerce-Sales-Dashboard
 
 # 📬 Contact
 
-**Name:** Your Name
+**GitHub:** https://github.com/yourusername
 
-**LinkedIn:** https://linkedin.com/in/your-profile
-
-**GitHub:** https://github.com/your-username
-
----
+**LinkedIn:** https://linkedin.com/in/yourprofile
